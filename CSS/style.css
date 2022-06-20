@@ -36,3 +36,35 @@ nav ul{
 	text-transform: uppercase;
 	font-weight: 800;
 }
+/*  */
+}
+body.blue {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    color: #444444;
+}
+.aui body {
+    color: #555;
+    font-weight: 200;
+}
+.aui body {
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    background-color: white;
+}
+.aui {
+    @-webkit-keyframes progress-bar-stripes{from{background-position: 40px 0}to{background-position:0 0}}@-moz-keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}@-ms-keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}@-o-keyframes progress-bar-stripes{from{background-position:0 0}to{background-position:40px 0}}@keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}};
+    @-ms-viewport{width: device-width}@-moz-keyframes spin{0%{-moz-transform:rotate(0deg)}100%{-moz-transform:rotate(359deg)}}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg)}}@-o-keyframes spin{0%{-o-transform:rotate(0deg)}100%{-o-transform:rotate(359deg)}}@-ms-keyframes spin{0%{-ms-transform:rotate(0deg)}100%{-ms-transform:rotate(359deg)}}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}background-color:white;
+    color: #333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+.aui ::selection {
+    background: #2aaae6!important;
+    color: #FFF;
+    text-shadow: -1px -1px rgb(0 0 0 / 30%);
+}
