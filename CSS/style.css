@@ -1,8 +1,3 @@
-@media (max-width: 979px)
-.aui .portlet-dockbar {
-    display: inline-block;
-    width: 100%;
-}
 
 
 nav{
@@ -37,34 +32,433 @@ nav ul{
 	font-weight: 800;
 }
 /*  */
-}
 body.blue {
     font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
     color: #444444;
 }
-.aui body {
-    color: #555;
-    font-weight: 200;
+
+/* cdss */
+Browser: {
+	acceptsGzip: function () {
+		return true;
+	},
+	getMajorVersion: function () {
+		return 102;
+	},
+	getRevision: function () {
+		return "537.36";
+	},
+	getVersion: function () {
+		return "102.0";
+	},
+	isAir: function () {
+		return false;
+	},
+	isChrome: function () {
+		return true;
+	},
+	isFirefox: function () {
+		return false;
+	},
+	isGecko: function () {
+		return true;
+	},
+	isIe: function () {
+		return false;
+	},
+	isIphone: function () {
+		return false;
+	},
+	isLinux: function () {
+		return false;
+	},
+	isMac: function () {
+		return false;
+	},
+	isMobile: function () {
+		return false;
+	},
+	isMozilla: function () {
+		return false;
+	},
+	isOpera: function () {
+		return false;
+	},
+	isRtf: function () {
+		return true;
+	},
+	isSafari: function () {
+		return true;
+	},
+	isSun: function () {
+		return false;
+	},
+	isWap: function () {
+		return false;
+	},
+	isWapXhtml: function () {
+		return false;
+	},
+	isWebKit: function () {
+		return true;
+	},
+	isWindows: function () {
+		return true;
+	},
+	isWml: function () {
+		return false;
+	},
+},
+Data: {
+	NAV_SELECTOR: "#navigation",
+	isCustomizationView: function () {
+		return false;
+	},
+	notices: [null],
+},
+ThemeDisplay: {
+	getLayoutId: function () {
+		return "1";
+	},
+	getLayoutURL: function () {
+		return "https://www.educa2.madrid.org/web/centro.ies.lopedevega.madrid/new-page";
+	},
+	getParentLayoutId: function () {
+		return "0";
+	},
+	isPrivateLayout: function () {
+		return "false";
+	},
+	isVirtualLayout: function () {
+		return false;
+	},
+	getBCP47LanguageId: function () {
+		return "es-ES";
+	},
+	getCDNBaseURL: function () {
+		return "https://www.educa2.madrid.org";
+	},
+	getCDNDynamicResourcesHost: function () {
+		return "";
+	},
+	getCDNHost: function () {
+		return "";
+	},
+	getCompanyId: function () {
+		return "10114";
+	},
+	getCompanyGroupId: function () {
+		return "2682985";
+	},
+	getDefaultLanguageId: function () {
+		return "es_ES";
+	},
+	getDoAsUserIdEncoded: function () {
+		return "";
+	},
+	getLanguageId: function () {
+		return "es_ES";
+	},
+	getParentGroupId: function () {
+		return "1418766";
+	},
+	getPathContext: function () {
+		return "";
+	},
+	getPathImage: function () {
+		return "/image";
+	},
+	getPathJavaScript: function () {
+		return "/html/js";
+	},
+	getPathMain: function () {
+		return "/c";
+	},
+	getPathThemeImages: function () {
+		return "https://www.educa2.madrid.org/educamadrid-default-theme/images";
+	},
+	getPathThemeRoot: function () {
+		return "/educamadrid-default-theme";
+	},
+	getPlid: function () {
+		return "1433968";
+	},
+	getPortalURL: function () {
+		return "https://www.educa2.madrid.org";
+	},
+	getPortletSetupShowBordersDefault: function () {
+		return true;
+	},
+	getScopeGroupId: function () {
+		return "1418766";
+	},
+	getScopeGroupIdOrLiveGroupId: function () {
+		return "1418766";
+	},
+	getSessionId: function () {
+		return "";
+	},
+	getSiteGroupId: function () {
+		return "1418766";
+	},
+	getURLControlPanel: function () {
+		return "/comunidad/control_panel?refererPlid=1433968";
+	},
+	getURLHome: function () {
+		return "https\x3a\x2f\x2fwww\x2eeduca2\x2emadrid\x2eorg\x2fweb\x2fguest";
+	},
+	getUserId: function () {
+		return "10117";
+	},
+	getUserName: function () {
+		return "";
+	},
+	isAddSessionIdToURL: function () {
+		return false;
+	},
+	isFreeformLayout: function () {
+		return false;
+	},
+	isImpersonated: function () {
+		return false;
+	},
+	isSignedIn: function () {
+		return false;
+	},
+	isStateExclusive: function () {
+		return false;
+	},
+	isStateMaximized: function () {
+		return false;
+	},
+	isStatePopUp: function () {
+		return false;
+	},
+},
+PropsValues: { NTLM_AUTH_ENABLED: false },
+};
+var themeDisplay = Liferay.ThemeDisplay;
+Liferay.AUI = {
+getAvailableLangPath: function () {
+	return "available_languages.jsp?browserId=other&themeId=educamadriddefault_WAR_educamadriddefaulttheme&colorSchemeId=01&minifierType=js&languageId=es_ES&b=6210&t=1655714173000";
+},
+getCombine: function () {
+	return true;
+},
+getComboPath: function () {
+	return "/combo/?browserId=other&minifierType=&languageId=es_ES&b=6210&t=1655714173000&";
+},
+getFilter: function () {
+	return "min";
+},
+getJavaScriptRootPath: function () {
+	return "/html/js";
+},
+getLangPath: function () {
+	return "aui_lang.jsp?browserId=other&themeId=educamadriddefault_WAR_educamadriddefaulttheme&colorSchemeId=01&minifierType=js&languageId=es_ES&b=6210&t=1655714173000";
+},
+getStaticResourceURLParams: function () {
+	return "?browserId=other&minifierType=&languageId=es_ES&b=6210&t=1655714173000";
+},
+};
+Liferay.authToken = "JSlZ2wG8";
+Liferay.currentURL = "\x2fweb\x2fcentro\x2eies\x2elopedevega\x2emadrid";
+Liferay.currentURLEncoded = "\x252Fweb\x252Fcentro\x2eies\x2elopedevega\x2emadrid";
+</script>
+<script src="./centro.ies.lopedevega.madrid _ EducaMadrid_files/everything.jsp" type="text/javascript"></script>
+<script type="text/javascript"></script>
+<script type="text/javascript">
+function checkIfControlPanel() {
+var b = "/educamadrid-default-theme";
+if (b == "/html/themes/control_panel") {
+	var a = "es_ES";
+	if (Liferay.ThemeDisplay.getLanguageId() != "es_ES") {
+		a = "en_US";
+	}
+	document.write('<link href="/cms_tools/css/scribe.css" rel="stylesheet" type="text/css" />');
+	document.write('<script type="text/javascript" src="/cms_tools/js/jquery-1.8.1.min.js"><\/script>');
+	document.write('<script type="text/javascript" src="/cms_tools/js/lang/' + a + '.js"><\/script>');
+	document.write('<script type="text/javascript" src="/cms_tools/js/scribe.js"><\/script>');
+	document.write('<script type="text/javascript" src="/html/themes/control_panel/js/educamadrid.js"><\/script>');
+	document.write('<link href="/html/themes/control_panel/css/educamadrid.css" rel="stylesheet" type="text/css" />');
 }
-.aui body {
-    margin: 0;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    color: #333;
-    background-color: white;
 }
-.aui {
-    @-webkit-keyframes progress-bar-stripes{from{background-position: 40px 0}to{background-position:0 0}}@-moz-keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}@-ms-keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}@-o-keyframes progress-bar-stripes{from{background-position:0 0}to{background-position:40px 0}}@keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}};
-    @-ms-viewport{width: device-width}@-moz-keyframes spin{0%{-moz-transform:rotate(0deg)}100%{-moz-transform:rotate(359deg)}}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg)}}@-o-keyframes spin{0%{-o-transform:rotate(0deg)}100%{-o-transform:rotate(359deg)}}@-ms-keyframes spin{0%{-ms-transform:rotate(0deg)}100%{-ms-transform:rotate(359deg)}}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}background-color:white;
-    color: #333;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    margin: 0;
+checkIfControlPanel();
+</script>
+<script src="./centro.ies.lopedevega.madrid _ EducaMadrid_files/scribe_file_directory.js.descarga" type="text/javascript"></script>
+<link class="lfr-css-file" href="./centro.ies.lopedevega.madrid _ EducaMadrid_files/main(4).css" rel="stylesheet" type="text/css" />
+<style id="user-css" type="text/css">
+/* Diseñador Web 2.1 */ /* ***************************************************************************** No edites a mano desde este punto hasta "Fin del Diseñador Web". Si lo haces, el Diseñador Web tal vez no funcione correctamente. Te recomendamos guardar una copia de este código en tu ordenador. ***************************************************************************** */ /* - Contenedor general de la página - */
+.blue #wrapper {
+/*CSSpageWidth*/
+width: 100%; /*CSSwrapperShadowColor*/
+box-shadow: 0 0 15px 0 #ffffff;
+} /* - Cabecera - */
+.blue #banner {
+/*CSSheaderBGColor*/
+background-color: #f9fbfc; /*CSSlogoURL*/
+background-image: url(/web/educamadrid/principal/files/7f3e4e95-da83-4571-ae92-dc3d08686bf2/PRUEBA%20CABC%203.png?t=1580899682625); /*CSSlogoRepeat*/
+background-repeat: no-repeat; /*CSSlogoPosition*/
+background-position: left top; /*CSSheaderHeight*/
+height: 0200px;
+} /* - Ocultamos el enlace de la cabecera - */
+.blue #banner .logo a {
+position: absolute;
+left: -9999px;
+overflow: hidden;
+} /* - Cuerpo de texto (fuente/color) - */
+body.blue {
+/*CSSfontFamily*/
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; /*CSSbodyColor*/
+color: #444444;
+} /* - Enlaces (color) - */
+.blue a {
+/*CSSaColor*/
+color: #01539c;
+} /* - Enlaces (color al pasar sobre ellos) - */
+.blue a:hover {
+/*CSSaHoverColor*/
+color: #c12b01;
+} /* - Contenidos (fuente/color) - */
+.blue .cms-content {
+/*CSScontentsFontFamily*/
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+} /* - Contenidos (fuente y color de los títulos) - */
+.blue .titles-list,
+.blue .cms-content-title,
+.blue .cms-content .header h1,
+.blue .cms-content .header h2,
+.blue .cms-content .options h1,
+.blue .cms-content .details h2,
+.blue .cms-content .details-title,
+.blue .titles-list a {
+/*CSStitlesFontFamily*/
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; /*CSStitlesBodyColor*/
+color: #01539c;
+} /* - Contenidos (color de los títulos con enlace al pasar sobre ellos) - */
+.blue .cms-content .header h1 a:hover,
+.blue .titles-list a:hover {
+/*CSStitlesAHoverColor*/
+color: #d76543;
+} /* - Navegación (fondo y bordes del menú principal y del menú de usuario) - */
+.blue #nav,
+.blue #nav ul {
+/*CSSnavBackground*/
+background-color: #01539c; /*CSSnavBorderColor*/
+border-color: #c0c0c0;
+color: #f7f8fc;
+} /* - Navegación (fondo enlaces activos) - */
+.blue #nav li:hover,
+.blue #nav li.sfhover,
+.blue #nav .current-section {
+/*CSSnavRolloverBackground*/
+background-color: #c0c0c0;
+} /* - Navegación (enlaces) - */
+.blue #nav a {
+/*CSSnavColor*/
+color: #f7f8fc; /*CSSnavFontSize*/
+font-size: 110%;
 }
-.aui ::selection {
-    background: #2aaae6!important;
-    color: #FFF;
-    text-shadow: -1px -1px rgb(0 0 0 / 30%);
+.blue #nav .current-section a {
+/*CSSnavActiveColor*/
+color: #2e2f33;
+}
+.blue #nav .current-section ul a {
+color: #f7f8fc;
+} /* - Navegación vertical (menú lateral) - */ /*CSSincludeSideNavStyles*/
+.narrow-column .portlet-site-map .portlet-content,
+.narrow-column .portlet-navigation .portlet-content {
+padding: 0;
+}
+.narrow-column .portlet-site-map .portlet-content ul,
+.narrow-column .portlet-site-map .portlet-content li,
+.narrow-column .portlet-navigation .portlet-content ul,
+.narrow-column .portlet-navigation .portlet-content li {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.narrow-column .portlet-site-map .portlet-content a,
+.narrow-column .portlet-navigation .portlet-content a {
+display: block;
+padding: 3px 15px; /*CSSsideNavBorderColor*/
+border-bottom: 1px solid #dddddd;
+}
+.narrow-column .portlet-site-map .portlet-content .current,
+.narrow-column .portlet-navigation .portlet-content .current {
+font-weight: bold; /*CSSsideNavCurrentColor*/
+color: #01539c;
+}
+.narrow-column .portlet-site-map .portlet-content a,
+.narrow-column .portlet-navigation .portlet-content a {
+/*CSSsideNavColor*/
+color: #ce0a0a;
+}
+.narrow-column .portlet-site-map .portlet-content a:hover,
+.narrow-column .portlet-navigation .portlet-content a:hover {
+color: #01539c;
+}
+.narrow-column .portlet-site-map .portlet-content .last a,
+.narrow-column .portlet-navigation .portlet-content .last a {
+border-bottom: none;
+}
+.narrow-column .portlet-site-map .portlet-content ul ul a,
+.narrow-column .portlet-navigation .portlet-content ul ul a {
+padding-left: 25px;
+}
+.narrow-column .portlet-site-map .portlet-content ul ul ul a,
+.narrow-column .portlet-navigation .portlet-content ul ul ul a {
+padding-left: 40px;
+} /* - Recursos (fondo, color texto, borde, esquinas redondeadas, sombra) - */
+.blue .portlet {
+/*CSSportletBorderColor*/
+border-color: #cecece; /*CSSportletBorderWidth*/
+border-width: 1px; /*CSSportletShadowColor*/
+box-shadow: 1px 1px 5px 0 #eeeff3;
+} /* - Recurso visor de contenidos - */
+.blue .visor-de-contenidos {
+box-shadow: none;
+} /* - Recursos (cabecera y título: borde, color) - */
+.blue .portlet-topper {
+/*CSSportletTitleColor*/
+color: #01539c;
+border-color: #cecece;
+border-width: 1px;
+} /* - Recursos (fondo del título) - */
+.blue .portlet-title {
+/*CSSportletTitleBGColor*/
+background-color: #fcfcfc; /*CSSportletTitleBGURL*/
+background-image: url(/html/educamadrid-tools/web-designer/themes/16/imagenes/fondo_titulo_recurso.gif); /*CSSportletTitleBGPosition*/
+background-position: left bottom; /*CSSportletTitleBGRepeat*/
+background-repeat: repeat-x;
+} /* - Recursos (enlaces Salir/Volver) - */
+.blue .portlet-icon-back {
+color: #01539c;
+}
+.blue .visor-de-contenidos .portlet-icon-back {
+color: #01539c;
+} /* - Pie de página (fondo, color, altura, borde) - */
+.blue #site-bottom {
+/*CSSfooterBGColor*/
+background: #eeeff3; /*CSSfooterHeight*/
+height: 100px; /* - Eliminamos el margen interno por defecto - */
+padding: 0; /*CSSfooterBorderColor*/
+border-color: #dddddd; /*CSSfooterBorderWidth*/
+border-top-width: 001px;
+border-top-style: solid;
+} /* - Pie de página (posición de sus contenidos) - */
+.blue #site-bottom div {
+padding-top: 10px;
+} /*CSScustomMobileDesign*/
+@media (max-width: 979px) {
+.blue #banner {
+	/*CSSlogoURLMobile*/
+	background-image: url(/web/educamadrid/principal/files/7f3e4e95-da83-4571-ae92-dc3d08686bf2/LOGO%20MOVIL%204.png?t=1580900398295); /*CSSheaderMobileHeight*/
+	height: 0400px;
+}
+} /* Fin del Diseñador Web */ /* Puedes editar los contenidos que hay debajo de este comentario. */
+#content-wrapper,
+#previewer {
+max-width: 1150px;
+margin: 0 auto;
 }
