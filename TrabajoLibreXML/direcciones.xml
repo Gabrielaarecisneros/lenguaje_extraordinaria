@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet  type="text/xml"?>
+<direccionesArea  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="./direciones.xsd">
+<nombre>Area prueba</nombre>
+    <centroSalu>
+    <nombreCentro>Centro prueba </nombreCentro>
+    <paciente>
+        <codPaciente>HHH1654789</codPaciente>
+        <minvacu>
+            <codCN>650000</codCN>
+            <fechavacu>2022-05-06</fechavacu>
+            <numdosis>
+                <ladoinocu>
+                    <!-- <derecho></derecho> -->
+                    <izquierdo></izquierdo>
+                   
+                </ladoinocu>
+            </numdosis>
+           
+        </minvacu>
+
+    </paciente>
+</centroSalu>
+
+</direccionesArea>

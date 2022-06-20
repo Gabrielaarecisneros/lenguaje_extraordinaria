@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+<!-- ............................................................................................. -->
+<xs:element name="direccionesArea">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element ref="centroSalu" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<!-- .......................................................................................................... -->
+<xs:element name="centroSalu" >
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="nombreCentro" type="xs:string"/>
+            <xs:element ref="paciente" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+
+
+<!-- .......................................................................................................... -->
+
+<xs:element name="paciente">
+<xs:complexType>
+        <xs:sequence>
+<xs:element name="codPaciente">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <!-- restriccion de codigo 3 letras, 7 numeros -->
+            <xs:pattern value="[A-Za-z]{3}[0-9]{7}"/>
+        </xs:restriction>
+    </xs:simpleType> 
+</xs:element>
+<xs:element ref="minvacu" minOccurs="1" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+
+<!-- ......................................................................................................... -->
+<xs:element name="minvacu">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="codCN">
+                <xs:simpleType>
+                   <xs:restriction base="xs:int">
+                      <xs:minInclusive value="650000"/>
+                      <xs:maxInclusive value="999999"/>
+                   </xs:restriction>
+                </xs:simpleType>
+             </xs:element>
+<xs:element name="fechavacu" type="xs:date"/>
+<xs:element ref="numdosis" minOccurs="1" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<!-- ......................................................................................................... -->
+
+<xs:element name="numdosis">
+    <xs:complexType>
+        <xs:sequence>
+<xs:element name="ladoinocu">
+<xs:complexType>
+        <xs:choice>
+            <xs:element name="izquierdo" type="xs:string"/>
+            <xs:element name="derecho" type="xs:string"/>
+        </xs:choice>
+    </xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>  
